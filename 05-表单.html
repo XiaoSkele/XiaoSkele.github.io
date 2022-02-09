@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+  <form action="url" method="get">
+    <table>
+    <!-- 账户 -->
+      <tr>
+        <td>
+          账号:
+        </td>
+        <td>
+          <input type="text" name="user" placeholder="请输入你的账号">
+        </td>
+      </tr>
+
+    <!-- 密码 -->
+      <tr>
+        <td>
+          密码:
+        </td>
+        <td>
+          <input type="password" name="pwd" placeholder="请输入你的密码">
+        </td>
+      </tr>
+
+
+    <!-- 性别: -->
+      <tr>
+        <td>
+          性别:
+        </td>
+        <td>
+          <!-- checked 是默认选择 -->
+          <input type="radio" name="gender" value="1" checked="checked">男
+          <input type="radio" name="gender" value="2">女
+        </td>
+      </tr>
+
+    <!-- 爱好 -->
+      <tr>
+        <td>
+          爱好:
+        </td>
+        <td>
+          <input type="checkbox" name="hobby" value="1">爬山
+          <input type="checkbox" name="hobby" value="2">喝水
+          <input type="checkbox" name="hobby" value="3">喝奶
+          <input type="checkbox" name="hobby" value="4">喝汽水
+        </td>
+      </tr>
+
+    <!-- 学历 -->
+      <tr>
+        <td>
+          学历:
+        </td>
+        <td>
+        <!-- multiple 是可以多选下拉列表 -->
+<!--          <select name="education" multiple="multiple" >-->
+          <select name="education" >
+            <option>高中</option>
+            <option>专科</option>
+            <option>本科</option>
+            <option>博士</option>
+          </select>
+        </td>
+      </tr>
+
+    <!-- 出生日期 -->
+      <tr>
+        <td>
+          生日:
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+
+
+    <!-- 照片 -->
+      <tr>
+        <td>
+          上传:
+        </td>
+        <td>
+          <!-- accept 可以筛选出指定的格式 -->
+          <input type="file" name="phone" accept="image/png">
+        </td>
+      </tr>
+
+    <!-- 个人简介 -->
+      <tr>
+        <td>
+          个人简介:
+        </td>
+        <td>
+        <!-- cols 代表列  rows 代表 行 -->
+          <textarea cols="50" rows="5"></textarea>
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td></td>
+      <!-- 登录按钮 -->
+        <td >
+          <input type="submit" value="登录">
+      <!-- 重置按钮 -->
+          <input type="reset" value="重置">
+      <!-- 普通按钮 -->
+          <input type="button" value="普通按钮">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
